@@ -1,0 +1,91 @@
+$if(title)$
+$if(title.name)$
+## $title.name$
+$endif$
+$if(title.position)$
+**$title.position$**   
+$endif$
+$if(mdoptions.hidequote)$
+$else$
+$if(title.quote)$
+*$title.quote$*
+$endif$
+$endif$
+$if(title.address)$
+* Address: $title.address$
+$endif$
+$if(title.mobile)$
+* Phone: $title.mobile$
+$endif$
+$if(title.email)$
+* Email: $title.email$
+$endif$
+$if(title.shortaddress)$
+* Address: $title.shortaddress$
+$endif$
+$if(title.homepage)$
+* Website: $title.homepage$
+$endif$
+$if(title.github.heading)$
+* Github: $title.github.link$
+$endif$
+$if(title.gitlab.heading)$
+* Gitlab: $title.gitlab.link$
+$endif$
+$if(title.stackoverflow.heading)$
+* Stackoverflow: $title.stackoverflow.link$
+$endif$
+$if(title.linkedin.heading)$
+* LinkedIn: $title.linkedin.link$
+$endif$
+$if(title.twitter.heading)$
+* Twitter: $title.twitter.link$
+$endif$
+$if(title.skype)$
+* Skype: $title.skype$
+$endif$
+$if(title.reddit.heading)$
+* Reddit: $title.reddit.link$
+$endif$
+$if(title.xing.heading)$
+* Xing: $title.xing.link$
+$endif$
+- - -
+
+$endif$
+$if(jobapplication)$
+
+**$jobapplication.companyteam$**  
+$jobapplication.companyname$  
+$jobapplication.companyaddr$
+
+
+**Job Application for $jobapplication.position$**  
+Dear $jobapplication.recipient$,
+$endif$
+
+$if(sections)$
+$for(sections)$
+
+$if(sections.heading)$
+**$sections.heading$**  
+$endif$
+$for(sections.content)$
+$if(sections.content.subheading)$
+*$sections.content.subheading$*  
+$endif$
+$if(sections.content.description)$
+$sections.content.description$
+$endif$
+$if(sections.content.items)$
+$for(sections.content.items)$
+* $sections.content.items$
+$endfor$
+$endif$
+
+$endfor$
+$endfor$
+$endif$
+
+Sincerely,  
+**$title.name$**

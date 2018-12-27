@@ -1,15 +1,11 @@
-<h1 align="center">puredoc</h1>
-
-<p align="center">Make Your Document Simple, Pure, the Best</p>
-
-## What is puredoc?
+# What is puredoc?
 **puredoc** is a docker image for document generation based on
 [texlive-small](https://github.com/weichuntsai0217/texlive-small) and
 [pandoc](https://pandoc.org/).
 It allows you to generate documents in multiple file formats
 from single yaml/markdown source.
 
-## Installation
+# Installation
 
 * Step 1. Install `docker` by following [Docker official installation guide](https://docs.docker.com/install/).
 Docker is cross-platform so you can run **puredoc** on Mac OSX / Linux / Windows.
@@ -19,11 +15,13 @@ $ docker pull weichuntsai/puredoc:1.0
 ```
 * Step 3. To initialize the container, run
 ```
-$ docker run --name ${container_name} -dt -v ${host_dir}:${container_dir} weichuntsai/puredoc:1.0
+$ docker run --name ${container_name} -dt \
+  -v ${host_dir}:${container_dir} weichuntsai/puredoc:1.0
 ```
 For example,
 ```
-$ docker run --name mydoc -dt -v /Users/jimmy_tsai:/home weichuntsai/puredoc:1.0
+$ docker run --name mydoc -dt \
+  -v /Users/jimmy_tsai:/home weichuntsai/puredoc:1.0
 ```
 * Step 4. To enter into the container you initialized in Step 3 (assume its name is `mydoc`), run
 ```
@@ -35,23 +33,24 @@ would show up in the `/home` of the container.
 
 For what commands you can use in this container, please refer to the following **Usage** parts.
 
-## Usage - README
+# Usage - README
 To see `README` in the container, just run:
 ```
 $ more /README-puredoc.md
 ```
 
-## Usage - generate documents
+# Usage - generate documents
 The command is as below
 ```
-$ puredoc ${my_input_file} ${template_type} ${output_extension} -o ${output_name_without_ext} -c "${CJK_font_name}" -d ${output_dir}
+$ puredoc ${my_input_file} ${template_type} ${output_extension} \
+  -o ${output_name_without_ext} -c "${CJK_font_name}" -d ${output_dir}
 ```
 where `-o` (`--output`), `-c` (`--cjk`), `-d` (`--dir`) are options you don't necessarily have to provide them.
 
 The `template_type` supports `resume`, `coverletter`, `article`, or `book`
 and the `output_extension` depends on the `template_type` you choose and would be explained in the following sections.
 
-### To generate a resume / CV
+## To generate a resume / CV
 ```
 $ puredoc ${my_input_file} resume ${output_extension}
 ```
@@ -111,7 +110,7 @@ $ cat my-resume.yaml | puredoc resume pdf -o your_resume
 ```
 If your input file is from pipe data, then you have to use `-o` option like above to assgin the output file name.
 
-### To generate a coverletter
+## To generate a coverletter
 ```
 $ puredoc ${my_input_file} coverletter ${output_extension}
 ```
@@ -121,7 +120,7 @@ the allowed output extensions are `pdf`, `md`,`txt` and `tex`.
 About the examples, please refer to **To generate a resume / CV** above.
 The only difference is the template type.
 
-### To generate an article
+## To generate an article
 ```
 $ puredoc ${my_input_file} article ${output_extension}
 ```
@@ -131,7 +130,7 @@ the allowed output extensions are `pdf` and `tex`.
 About the examples, please refer to **To generate a resume / CV** above.
 The only difference is the template type and the extension of the input file.
 
-### To generate a book
+## To generate a book
 ```
 $ puredoc ${my_input_file} book ${output_extension}
 ```
@@ -141,7 +140,7 @@ the allowed output extensions are `pdf` and `tex`.
 About the examples, please refer to **To generate a resume / CV** above.
 The only difference is the template type and the extension of the input file.
 
-### To generate a big book / article
+## To generate a big book / article
 Sometimes you want to divide a big `md` into several `md` and then compile them into a pdf.
 To do this, you have to provide a `txt` file (assume it is `my-big-book.txt`) containing your `md` file names like this
 ```
@@ -158,10 +157,10 @@ $ puredoc my-big-book.txt book pdf
 
 For more details, please refer to `examples/book-with-multiple-files/`
 
-## How the input `yaml` or `md` look like?
+# How the input `yaml` or `md` look like?
 **Please refer to `examples/` for more details.**
 
-## Special characters in yaml files or yaml header of markdown files
+# Special characters in yaml files or yaml header of markdown files
 To show `:` in `pdf`, `md` and `txt` normally,
 you have to type one space with `>` just at the right of the key and
 put your value to the next line of the key.

@@ -1,0 +1,109 @@
+---
+pdfoptions:
+  footerdisabled: true
+
+title:
+  name: Special Character YAML Examples
+
+sections:
+- heading: SUMMARY
+  content:
+  - subheading: >
+      :asd: bbb :
+      ::
+    items:
+    - >
+      ::
+  - subheading: \@
+      \@asd\@
+      \@\@
+    items:
+    - \@\@
+  - subheading: \-
+      \-asd\-
+      \-\-
+    items:
+    - \-\-
+  - subheading: \%
+      \%asd\%
+      \%\%
+    items:
+    - \%\%
+  - subheading: \&
+      \&asd\&
+      \&\&
+    items:
+    - \&\&
+  - subheading: \|
+      \|asd\|
+      \|\|
+    items:
+    - \|\|
+  - subheading: \+
+      \+asd\+
+      \+\+
+    items:
+    - \+\+
+  - subheading: \{
+      \{asd\{
+      \{\{
+    items:
+    - \{\{
+  - subheading: \}
+      \}asd\}
+      \}\}
+    items:
+    - \}\}
+  - subheading: \#
+      \#asd\#
+      \#\#
+    items:
+    - \#\#
+  - subheading: \\
+      \\asd\\
+      \\\\
+    items:
+    - \\\\
+  - subheading: \*
+      \*asd\*
+      \*\*
+    items:
+    - \*\*
+  - subheading: \$
+      \$asd\$
+      \$\$
+    items:
+    - \$\$
+  - subheading: \^
+      \^asd\^
+      \^\^
+    items:
+    - \^\^
+  - subheading: \_
+      \_asd\_
+      \_\_
+    items:
+    - \_\_
+  - subheading: \>
+      \>asd\>
+      \>\>
+    items:
+    - \>\>
+  - subheading: \<
+      \<asd\<
+      \<\<
+    items:
+    - \<\<
+  - subheading: \[
+      \[asd\[
+      \[\[
+    items:
+    - \[\[
+    - >
+      [Google](https://www.google.com)
+  - subheading: \]
+      \]asd\]
+      \]\]
+    items:
+    - \]\]
+...

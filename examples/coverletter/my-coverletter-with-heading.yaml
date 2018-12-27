@@ -1,0 +1,90 @@
+---
+pdfoptions:
+# \space => use to override default content by a space.
+# \thepage => show the page number.
+# \today => show date for today in English.
+# \LaTeX => show latex mark in pdf.
+# \normalfont => to cancel bold in heading / subheading or italic in quote
+  marginleft: # 1.4cm, 1.5cm, etc.
+  margintop: # 0.8cm, 0.9cm, etc.
+  marginright: # 1.4cm, 1.5cm, etc.
+  marginbottom: # 1.8cm, 1.9cm, etc.
+  marginfootskip: # 0.5cm, 0.6cm, etc.
+  fontsize: 10pt # 10pt, 11pt or 12pt.
+  titletextalign: C # The title text align, L for left, C for center, or R for right.
+  photo:
+    shape: # circle or rectangle
+    edge: # edge or noedge
+    align: # left or right
+    link: # the photo file link, ex: ./profile.png
+  footerdisabled: # true or false
+  footerleft: \space
+  footercenter: \thepage
+  footerright: \space
+
+
+mdoptions:
+  hidequote: # true or false
+
+
+title:
+  name: Wei-Chun Tsai
+  position: Software Engineer at Taiwan No. 2 Company
+  address: No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan
+  mobile: (+886) 123-456-789
+  email: weichuntsai0217\@gmail.com
+  shortaddress:
+  github:
+    heading: weichuntsai0217
+    link: >
+      https://github.com/weichuntsai0217
+  gitlab:
+    heading:
+    link:
+  stackoverflow:
+    heading:
+    link:
+  linkedin:
+    heading: weichuntsai
+    link: >
+      https://www.linkedin.com/in/weichuntsai/
+  twitter:
+    heading:
+    link:
+  skype:
+  reddit:
+    heading:
+    link:
+  xing:
+    heading:
+    link:
+  quote: Risk is our business.
+
+
+jobapplication:
+  companyteam: Company Recruitment Team
+  companyname: Taiwan No. 1 Company
+  companyaddr: No.3, Ketagalan Blvd., Taipei City 10048, Taiwan
+  position: Software Engineer
+  recipient: Mr./Ms./Dr. LastName
+
+
+sections:
+- heading: About Me
+  content:
+  - subheading:
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+    items:
+  
+- heading: Why Taiwan No. 1 Company?
+  content:
+  - subheading:
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+    items:
+
+- heading: Why Me?
+  content:
+  - subheading:
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+    items:
+...

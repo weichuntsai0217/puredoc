@@ -1,0 +1,110 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[$if(pdfoptions.fontsize)$$pdfoptions.fontsize$$else$10pt$endif$, a4paper]{puredoc-cv}
+\geometry{
+  left=$if(pdfoptions.marginleft)$$pdfoptions.marginleft$$else$2.0cm$endif$,
+  top=$if(pdfoptions.margintop)$$pdfoptions.margintop$$else$1.5cm$endif$,
+  right=$if(pdfoptions.marginright)$$pdfoptions.marginright$$else$2.0cm$endif$,
+  bottom=$if(pdfoptions.marginbottom)$$pdfoptions.marginbottom$$else$2.0cm$endif$,
+  footskip=$if(pdfoptions.marginfootskip)$$pdfoptions.marginfootskip$$else$0.5cm$endif$
+}
+
+$if(cjk)$
+\usepackage[BoldFont, SlantFont]{xeCJK}
+\setCJKmainfont{$cjk$}
+$endif$
+
+$if(title)$
+$if(pdfoptions.photo.link)$
+\photo[$pdfoptions.photo.shape$,$pdfoptions.photo.edge$,$pdfoptions.photo.align$]{$pdfoptions.photo.link$}
+$endif$
+$if(title.name)$
+\name{$title.name$}
+$endif$
+$if(title.position)$
+\position{$title.position$}
+$endif$
+$if(title.address)$
+\address{$title.address$}
+$endif$
+$if(title.mobile)$
+\mobile{$title.mobile$}
+$endif$
+$if(title.email)$
+\email{$title.email$}
+$endif$
+$if(title.shortaddress)$
+\shortaddress{$title.shortaddress$}
+$endif$
+$if(title.homepage)$
+\homepage{$title.homepage$}
+$endif$
+$if(title.github.heading)$
+\github{$title.github.heading$}{$title.github.link$}
+$endif$
+$if(title.gitlab.heading)$
+\gitlab{$title.gitlab.heading$}{$title.gitlab.link$}
+$endif$
+$if(title.stackoverflow.heading)$
+\stackoverflow{$title.stackoverflow.heading$}{$title.stackoverflow.link$}
+$endif$
+$if(title.linkedin.heading)$
+\linkedin{$title.linkedin.heading$}{$title.linkedin.link$}
+$endif$
+$if(title.twitter.heading)$
+\twitter{$title.twitter.heading$}{$title.twitter.link$}
+$endif$
+$if(title.skype)$
+\skype{$title.skype$}
+$endif$
+$if(title.reddit.heading)$
+\reddit{$title.reddit.heading$}{$title.reddit.link$}
+$endif$
+$if(title.xing.heading)$
+\xing{$title.xing.heading$}{$title.xing.link$}
+$endif$
+$if(title.quote)$
+\quote{$title.quote$}
+$endif$
+$endif$
+
+\begin{document}
+
+\makecvtitle[$if(pdfoptions.titletextalign)$$pdfoptions.titletextalign$$else$L$endif$]
+
+$if(pdfoptions.footerdisabled)$
+$else$
+\makecvfooter
+  {$if(pdfoptions.footerleft)$$pdfoptions.footerleft$$else$\today$endif$}
+  {$if(pdfoptions.footercenter)$$pdfoptions.footercenter$$else$$title.name$~~~·~~~Résumé$endif$}
+  {$if(pdfoptions.footerright)$$pdfoptions.footerright$$else$\thepage$endif$}
+$endif$
+
+$for(sections)$
+$if(sections.heading)$
+\cvsection{$sections.heading$}
+$endif$
+$for(sections.content)$
+\begin{skipwrapper}
+$if(sections.content.hideinpdf)$
+$else$
+$if(sections.content.subheading)$
+  \cvsubsection{$sections.content.subheading$}
+$endif$
+$if(sections.content.description)$
+  \cvparagraph{$sections.content.description$}
+$endif$
+$if(sections.content.items)$
+  \begin{cvitems}
+$for(sections.content.items)$
+    \item {$sections.content.items$}
+$endfor$
+  \end{cvitems}
+$endif$
+$endif$
+\end{skipwrapper}
+$endfor$
+$endfor$
+
+\end{document}

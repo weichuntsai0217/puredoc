@@ -1,0 +1,63 @@
+Special Character YAML Examples
+- - -
+
+
+# SUMMARY
+:asd: bbb : ::
+* ::
+
+@ @asd@ @@
+* @@
+
+- -asd- --
+* --
+
+% %asd% %%
+* %%
+
+& &asd& &&
+* &&
+
+| |asd| ||
+* ||
+
++ +asd+ ++
+* ++
+
+{ {asd{ {{
+* {{
+
+} }asd} }}
+* }}
+
+# #asd# ##
+* ##
+
+\ \asd\ \\
+* \\
+
+* *asd* **
+* **
+
+$ $asd$ $$
+* $$
+
+^ ^asd^ ^^
+* ^^
+
+_ _asd_ __
+* __
+
+> >asd> >>
+* >>
+
+< <asd< <<
+* <<
+
+[ [asd[ [[
+* [[
+* Google (https://www.google.com)
+
+] ]asd] ]]
+* ]]
+

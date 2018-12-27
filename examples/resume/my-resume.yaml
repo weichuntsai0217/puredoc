@@ -1,0 +1,175 @@
+---
+pdfoptions:
+# \space => use to override default content by a space.
+# \thepage => show the page number.
+# \today => show date for today in English.
+# \LaTeX => show latex mark in pdf.
+# \normalfont => to cancel bold in heading / subheading or italic in quote
+  marginleft: # 1.4cm, 1.5cm, etc.
+  margintop: # 0.8cm, 0.9cm, etc.
+  marginright: # 1.4cm, 1.5cm, etc.
+  marginbottom: # 1.8cm, 1.9cm, etc.
+  marginfootskip: # 0.5cm, 0.6cm, etc.
+  fontsize: 10pt # 10pt, 11pt or 12pt.
+  titletextalign: C # The title text align, L for left, C for center, or R for right.
+  photo:
+    shape: # circle or rectangle
+    edge: # edge or noedge
+    align: # left or right
+    link: # the photo file link, ex: ./profile.png
+  footerdisabled: # true or false
+  footerleft: #
+  footercenter: #
+  footerright: #
+
+mdoptions:
+  hidequote: # true or false
+
+title:
+  name: Wei\-Chun Tsai
+  position: Software Engineer at Taiwan No. 1 Company
+  address: No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan
+  mobile: (+886) 123\-456\-789
+  email: weichuntsai0217\@gmail.com
+  shortaddress:
+  github:
+    heading: weichuntsai0217
+    link: >
+      https://github.com/weichuntsai0217
+  gitlab:
+    heading:
+    link:
+  stackoverflow:
+    heading:
+    link:
+  linkedin:
+    heading: weichuntsai
+    link: >
+      https://www.linkedin.com/in/weichuntsai/
+  twitter:
+    heading:
+    link:
+  skype:
+  reddit:
+    heading:
+    link:
+  xing:
+    heading:
+    link:
+  quote: Risk is our business.
+
+sections:
+- heading: SUMMARY
+  content:
+  - subheading:
+    description:
+    items:
+    - 3+ years experience in web front\-end development.
+    - Expertise in HTML/CSS, JavaScript, web frameworks (React, Redux), jQuery.
+    - Good knowledge of HTTP, RESTful API, user interface design (UI), user experience design (UX), responsive web design (RWD).
+    - Familiarity with the whole web stack, including protocols and web server optimization techniques.
+    - Hands\-on experience in Git, Node.js, webpack, npm, mocha, Shell script, PHP/MySQL.
+    - Extensive experience in server management (Amazon EC2, Google Cloud Platform), data visualization (Tableau).
+  
+- heading: PROFESSIONAL EXPERIENCE
+  content:
+  - subheading: Software Engineer at Taiwan No. 1 Company (Taipei, Taiwan \| Feb. 2015 \- Present)
+    description: Taiwan No. 1 Company is a leading software company in internet security. 
+    items:
+    - Developed 50+ views and features with great browser compatibility.
+    - Improved the bounce rate of mobile users by 23\%.
+    - Modified SEO and improved search engine average ranking on Google into rank 1 for specific Chinese keywords.
+    - Increased average monthly revenue by +12\%.
+    - Server management (Amazon EC2) and database schema design.
+  - subheading: Product Engineer at Taiwan No. 2 Company (Taipei, Taiwan \| Aug. 2014 \- Feb. 2015)
+    description: Taiwan No. 2 Company is a leading professional software distributor in Taiwan.
+    items:
+    - Tableau industrialization including pre\-sales/product DEMO, data visualization \& analysis, technical support, and employee training for customers.
+    - Help customers to use JavaScript API to customize Tableau online report.
+    - 14 successful cases of industrialization of Tableau.
+    - Created annual revenue by +21\%.
+    - Professional Tableau instructor with Tableau Bronze Certification.
+  - subheading: R\&D Engineer at Taiwan No. 3 Company (Hsinchu, Taiwan \| Feb. 2012 \- Aug. 2014)
+    description: Taiwan No. 3 Company is the world's first dedicated semiconductor foundry.
+    items: 
+    - Resistivity modeling \& improvement on P/N junction. Data analysis for new implant \& anneal processes.
+    - Improved PMOS (NMOS) SD resistivity by 18\% (11\%) compared to figures derived for 20\-nanometer technology.
+    - Developed a novel testline for Schottky barrier height characterization, which achieved a 0.01 eV resolution.
+    - Solved leakage problems currently plaguing 10\-nanometer technology by characterizing p\-type background doping in pure\-Ge.
+
+- heading: SKILLS
+  content:
+  - subheading:
+    description:
+    items:
+    - HTML/CSS, JavaScript, React, Redux, jQuery, jQuery UI, jQuery Mobile, webpack,
+      mocha, Node.js, npm, PHP, MySQL, Responsive Web Design (RWD), AJAX/Promise,
+      RESTful API, AngularJS, Git, GitHub, GruntJS, Shell script, Server Management (Amazon EC2),
+      Linux, Windows, C, C++, Python, Java, Data Visualization (Tableau).
+
+- heading: LANGUAGES
+  content:
+  - subheading:
+    description:
+    items:
+    - Chinese (native), English (fluent)
+
+- heading: EDUCATION
+  content:
+  - subheading:
+    description:
+    items:
+    - Master of Science in Physics, National Taiwan University (Taipei City, Taiwan \| 2008 \- 2011)
+    - Bachelor of Science in Physics, National Taiwan University (Taipei City, Taiwan \| 2004 \- 2008)
+
+- heading: PROJECTS
+  content:
+  - subheading: Web App for Koios
+    description:
+    items:
+    - >
+      Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux, Highchart.
+    - >
+      Back-end Tech: Java.
+    - >
+      Utilities: Git, Node.js, npm, webpack.
+  - subheading: Web App for Network Function Virtualization Suite
+    description:
+    items:
+    - >
+      Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux.
+    - >
+      Back-end Tech: Java.
+    - >
+      Utilities: Git, Node.js, npm, webpack.
+  - subheading: Web App for EnforcerX
+    description:
+    items:
+    - >
+      Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux.
+    - >
+      Back-end Tech: Java.
+    - >
+      Utilities: Git, Node.js, npm, webpack.
+  - subheading: P+ Source\-Drain High Activation
+    hideinpdf: true # true to hide this sub section in pdf, but still show in md and txt
+    description:
+    items:
+    - Improved PMOS source\-drain resistivity by 18% compared to figures derived for 20\-nanometer technology.
+  - subheading: N+ Source\-Drain High Activation
+    hideinpdf: true # true to hide this sub section in pdf, but still show in md and txt
+    description:
+    items:
+    - Improved NMOS source\-drain resistivity by 11% compared to figures derived for 20\-nanometer technology.
+
+- heading: PATENTS
+  content:
+  - subheading: United States Patent
+    description:
+    items:
+    - 9093335 Calculating carrier concentrations in semiconductor Fins using probed resistance
+    - 9349659 Methods for probing semiconductor fins and determining carrier concentrations therein
+    - 9412847 Self\-aligned passivation of active regions
+    - 9431288 System and method for test key characterizing wafer processing state
+    - 9953975 Methods for forming STI regions in integrated circuits
+...

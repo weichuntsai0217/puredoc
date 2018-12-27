@@ -1,0 +1,89 @@
+Wei-Chun Tsai
+Software Engineer at Taiwan No. 1 Company
+*Risk is our business.*
+* Address: No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan
+* Phone: (+886) 123-456-789
+* Email: weichuntsai0217@gmail.com
+* Github: https://github.com/weichuntsai0217
+* LinkedIn: https://www.linkedin.com/in/weichuntsai/
+- - -
+
+
+# SUMMARY
+* 3+ years experience in web front-end development.
+* Expertise in HTML/CSS, JavaScript, web frameworks (React, Redux), jQuery.
+* Good knowledge of HTTP, RESTful API, user interface design (UI), user experience design (UX), responsive web design (RWD).
+* Familiarity with the whole web stack, including protocols and web server optimization techniques.
+* Hands-on experience in Git, Node.js, webpack, npm, mocha, Shell script, PHP/MySQL.
+* Extensive experience in server management (Amazon EC2, Google Cloud Platform), data visualization (Tableau).
+
+
+# PROFESSIONAL EXPERIENCE
+Software Engineer at Taiwan No. 1 Company (Taipei, Taiwan | Feb. 2015 - Present)
+Taiwan No. 1 Company is a leading software company in internet security.
+* Developed 50+ views and features with great browser compatibility.
+* Improved the bounce rate of mobile users by 23%.
+* Modified SEO and improved search engine average ranking on Google into rank 1 for specific Chinese keywords.
+* Increased average monthly revenue by +12%.
+* Server management (Amazon EC2) and database schema design.
+
+Product Engineer at Taiwan No. 2 Company (Taipei, Taiwan | Aug. 2014 - Feb. 2015)
+Taiwan No. 2 Company is a leading professional software distributor in Taiwan.
+* Tableau industrialization including pre-sales/product DEMO, data visualization & analysis, technical support, and employee training for customers.
+* Help customers to use JavaScript API to customize Tableau online report.
+* 14 successful cases of industrialization of Tableau.
+* Created annual revenue by +21%.
+* Professional Tableau instructor with Tableau Bronze Certification.
+
+R&D Engineer at Taiwan No. 3 Company (Hsinchu, Taiwan | Feb. 2012 - Aug. 2014)
+Taiwan No. 3 Company is the world's first dedicated semiconductor foundry.
+* Resistivity modeling & improvement on P/N junction. Data analysis for new implant & anneal processes.
+* Improved PMOS (NMOS) SD resistivity by 18% (11%) compared to figures derived for 20-nanometer technology.
+* Developed a novel testline for Schottky barrier height characterization, which achieved a 0.01 eV resolution.
+* Solved leakage problems currently plaguing 10-nanometer technology by characterizing p-type background doping in pure-Ge.
+
+
+# SKILLS
+* HTML/CSS, JavaScript, React, Redux, jQuery, jQuery UI, jQuery Mobile, webpack, mocha, Node.js, npm, PHP, MySQL, Responsive Web Design (RWD), AJAX/Promise, RESTful API, AngularJS, Git, GitHub, GruntJS, Shell script, Server Management (Amazon EC2), Linux, Windows, C, C++, Python, Java, Data Visualization (Tableau).
+
+
+# LANGUAGES
+* Chinese (native), English (fluent)
+
+
+# EDUCATION
+* Master of Science in Physics, National Taiwan University (Taipei City, Taiwan | 2008 - 2011)
+* Bachelor of Science in Physics, National Taiwan University (Taipei City, Taiwan | 2004 - 2008)
+
+
+# PROJECTS
+Web App for Koios
+* Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux, Highchart.
+* Back-end Tech: Java.
+* Utilities: Git, Node.js, npm, webpack.
+
+Web App for Network Function Virtualization Suite
+* Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux.
+* Back-end Tech: Java.
+* Utilities: Git, Node.js, npm, webpack.
+
+Web App for EnforcerX
+* Front-end Tech: HTML/CSS, JavaScript, jQuery, jQuery UI, React, Redux.
+* Back-end Tech: Java.
+* Utilities: Git, Node.js, npm, webpack.
+
+P+ Source-Drain High Activation
+* Improved PMOS source-drain resistivity by 18% compared to figures derived for 20-nanometer technology.
+
+N+ Source-Drain High Activation
+* Improved NMOS source-drain resistivity by 11% compared to figures derived for 20-nanometer technology.
+
+
+# PATENTS
+United States Patent
+* 9093335 Calculating carrier concentrations in semiconductor Fins using probed resistance
+* 9349659 Methods for probing semiconductor fins and determining carrier concentrations therein
+* 9412847 Self-aligned passivation of active regions
+* 9431288 System and method for test key characterizing wafer processing state
+* 9953975 Methods for forming STI regions in integrated circuits
+
