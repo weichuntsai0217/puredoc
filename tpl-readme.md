@@ -1,10 +1,10 @@
-<h1 align="center">puredoc</h1>
+<h1 align="center">$PROJ_NAME$</h1>
 
 <p align="center">Make Your Document Simple, Pure, the Best</p>
 
-## What is puredoc?
-**puredoc** is a docker image for document generation based on
-[texlive-small](https://github.com/weichuntsai0217/texlive-small) and
+## What is $PROJ_NAME$?
+**$PROJ_NAME$** is a docker image for document generation based on
+[$DEP_NAME$](https://github.com/weichuntsai0217/$DEP_NAME$) and
 [pandoc](https://pandoc.org/).
 It allows you to generate documents in multiple file formats
 from single yaml/markdown source.
@@ -12,18 +12,18 @@ from single yaml/markdown source.
 ## Installation
 
 * Step 1. Install `docker` by following [Docker official installation guide](https://docs.docker.com/install/).
-Docker is cross-platform so you can run **puredoc** on Mac OSX / Linux / Windows.
+Docker is cross-platform so you can run **$PROJ_NAME$** on Mac OSX / Linux / Windows.
 * Step 2. To download the image, run
 ```
-$ docker pull weichuntsai/puredoc:1.1.0
+$ docker pull $PROJ_REPO$:$PROJ_VER$
 ```
 * Step 3. To initialize the container, run
 ```
-$ docker run --name ${container_name} -dt -v ${host_dir}:${container_dir} weichuntsai/puredoc:1.1.0
+$ docker run --name ${container_name} -dt -v ${host_dir}:${container_dir} $PROJ_REPO$:$PROJ_VER$
 ```
 For example,
 ```
-$ docker run --name mydoc -dt -v /Users/jimmy_tsai:/home weichuntsai/puredoc:1.1.0
+$ docker run --name mydoc -dt -v /Users/jimmy_tsai:/home $PROJ_REPO$:$PROJ_VER$
 ```
 * Step 4. To enter into the container you initialized in Step 3 (assume its name is `mydoc`), run
 ```
@@ -38,13 +38,13 @@ For what commands you can use in this container, please refer to the following *
 ## Usage - README
 To see `README` in the container, just run:
 ```
-$ more /README-puredoc.md
+$ more /README-$PROJ_NAME$.md
 ```
 
 ## Usage - generate documents
 The command is as below
 ```
-$ puredoc ${my_input_file} ${template_type} ${output_extension} -o ${output_name_without_ext} -c "${CJK_font_name}" -d ${output_dir}
+$ $PROJ_NAME$ ${my_input_file} ${template_type} ${output_extension} -o ${output_name_without_ext} -c "${CJK_font_name}" -d ${output_dir}
 ```
 where `-o` (`--output`), `-c` (`--cjk`), `-d` (`--dir`) are options you don't necessarily have to provide them.
 
@@ -53,7 +53,7 @@ and the `output_extension` depends on the `template_type` you choose and would b
 
 ### To generate a resume / CV
 ```
-$ puredoc ${my_input_file} resume ${output_extension}
+$ $PROJ_NAME$ ${my_input_file} resume ${output_extension}
 ```
 For the template type `resume`,
 the input file should be a `yaml` and
@@ -62,37 +62,37 @@ For example:
 
 * To generate `my-resume.pdf`
 ```
-$ puredoc my-resume.yaml resume pdf
+$ $PROJ_NAME$ my-resume.yaml resume pdf
 ```
 * To generate `my-resume.md`
 ```
-$ puredoc my-resume.yaml resume md
+$ $PROJ_NAME$ my-resume.yaml resume md
 ```
 * To generate `my-resume.txt`
 ```
-$ puredoc my-resume.yaml resume txt
+$ $PROJ_NAME$ my-resume.yaml resume txt
 ```
 * To generate `my-resume.tex`
 ```
-$ puredoc my-resume.yaml resume tex
+$ $PROJ_NAME$ my-resume.yaml resume tex
 ```
 * To generate `my-resume.pdf`, `my-resume.md`, `my-resume.txt`, `my-resume.tex` at one time
 ```
-$ puredoc my-resume.yaml resume all
+$ $PROJ_NAME$ my-resume.yaml resume all
 ```
 
 If you want to change the output file name, you can use `-o` or `--output` with a file name without extension.
 For example, you want the output file is `your_resume.pdf`, then please run
 ```
-$ puredoc my-resume.yaml resume pdf -o your_resume
+$ $PROJ_NAME$ my-resume.yaml resume pdf -o your_resume
 ```
 If you provide `-o` but not with a file name you want,
-the output file would be the form like `output-of-puredoc-2018-12-24-12-39-03.pdf`
+the output file would be the form like `output-of-$PROJ_NAME$-2018-12-24-12-39-03.pdf`
 
 If you want to change the output directory (default is the current directory), you can use `-d` or `--dir` with a directory path.
 For example, you want the output directory is `/aa/bb`, then please run
 ```
-$ puredoc my-resume.yaml resume pdf -d /aa/bb
+$ $PROJ_NAME$ my-resume.yaml resume pdf -d /aa/bb
 ```
 If you provide `-d` but not with a directory path,
 the output directory would be `output/` in the current directory.
@@ -100,20 +100,20 @@ the output directory would be `output/` in the current directory.
 If you have non-English content (for example, traditional Chinese), you can use `-c` or `--cjk` with a CJK font name.
 For example,
 ```
-$ puredoc my-resume.yaml resume pdf -c "WenQuanYi Zen Hei" 
+$ $PROJ_NAME$ my-resume.yaml resume pdf -c "WenQuanYi Zen Hei" 
 ```
 If you provide `-c` but not with a CJK font name,
-`puredoc` would use "AR PL UMing TW" (the only pre-installed CJK font in puredoc image) as the default CJK font.
+`$PROJ_NAME$` would use "AR PL UMing TW" (the only pre-installed CJK font in $PROJ_NAME$ image) as the default CJK font.
 
 Your input file can also be from the pipe data like this:
 ```
-$ cat my-resume.yaml | puredoc resume pdf -o your_resume
+$ cat my-resume.yaml | $PROJ_NAME$ resume pdf -o your_resume
 ```
 If your input file is from pipe data, then you have to use `-o` option like above to assgin the output file name.
 
 ### To generate a coverletter
 ```
-$ puredoc ${my_input_file} coverletter ${output_extension}
+$ $PROJ_NAME$ ${my_input_file} coverletter ${output_extension}
 ```
 For the template type `coverletter`,
 the input file should be a `yaml` and
@@ -123,7 +123,7 @@ The only difference is the template type.
 
 ### To generate an article
 ```
-$ puredoc ${my_input_file} article ${output_extension}
+$ $PROJ_NAME$ ${my_input_file} article ${output_extension}
 ```
 For the template type `article`,
 the input file should be a `md` and
@@ -133,7 +133,7 @@ The only difference is the template type and the extension of the input file.
 
 ### To generate a book
 ```
-$ puredoc ${my_input_file} book ${output_extension}
+$ $PROJ_NAME$ ${my_input_file} book ${output_extension}
 ```
 For the template type `book`,
 the input file should be a `md` and
@@ -153,7 +153,7 @@ chapter-3.md
 
 Then you can run:
 ```
-$ puredoc my-big-book.txt book pdf
+$ $PROJ_NAME$ my-big-book.txt book pdf
 ```
 
 For more details, please refer to `examples/book-with-multiple-files/`
